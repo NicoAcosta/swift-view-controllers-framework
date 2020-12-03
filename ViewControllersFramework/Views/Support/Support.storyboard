@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qPL-qs-Rhb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamLight.ttf">
+            <string>GothamLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--support-->
+        <scene sceneID="iv9-sF-nPw">
+            <objects>
+                <viewController title="support" id="qPL-qs-Rhb" customClass="SupportVC" customModule="MyFramework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sl3-9a-tBE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cm-G0-gPd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="p71-hi-8Ig"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Support" id="dWZ-4G-3cM">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="gZ8-7N-2eJ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="menuAction:" destination="qPL-qs-Rhb" id="lym-Id-I7X"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-k9-zu7">
+                                <rect key="frame" x="30" y="692" width="354" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WHJ-Y9-hAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="22"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="0.0" green="0.28627450980000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mailAction:" destination="qPL-qs-Rhb" eventType="touchUpInside" id="FSm-pd-zHT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-6F-htk" userLabel="Subject View">
+                                <rect key="frame" x="30" y="138" width="354" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDN-7D-xjY">
+                                        <rect key="frame" x="0.0" y="20" width="354" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3ct-hm-Yyc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write the subject of your issue here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pvj-LN-jkN" userLabel="Subject Field" customClass="UITextFieldPadding" customModule="MyFramework2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="354" height="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" systemColor="systemGray4Color"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pvj-LN-jkN" secondAttribute="trailing" id="5SF-PL-tTn"/>
+                                    <constraint firstItem="Pvj-LN-jkN" firstAttribute="top" secondItem="EDN-7D-xjY" secondAttribute="bottom" constant="10" id="61E-vf-FhY"/>
+                                    <constraint firstItem="EDN-7D-xjY" firstAttribute="top" secondItem="xLx-6F-htk" secondAttribute="top" constant="20" id="aNu-m7-kRj"/>
+                                    <constraint firstItem="Pvj-LN-jkN" firstAttribute="leading" secondItem="xLx-6F-htk" secondAttribute="leading" id="jHX-Kv-KMn"/>
+                                    <constraint firstAttribute="trailing" secondItem="EDN-7D-xjY" secondAttribute="trailing" id="oXL-5S-9um"/>
+                                    <constraint firstItem="EDN-7D-xjY" firstAttribute="leading" secondItem="xLx-6F-htk" secondAttribute="leading" id="ooP-Ay-R6U"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pvj-LN-jkN" secondAttribute="bottom" constant="10" id="oyj-dM-Nvf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6np-Nr-VeL" userLabel="Message View">
+                                <rect key="frame" x="30" y="242" width="354" height="420"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQQ-Rx-5kc">
+                                        <rect key="frame" x="0.0" y="10" width="354" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your message here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I2I-Sq-pyV" userLabel="Message Field" customClass="UITextViewPadding" customModule="MyFramework2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="35.5" width="354" height="384.5"/>
+                                        <color key="textColor" systemColor="systemGray3Color"/>
+                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXD-ir-ng2">
+                                        <rect key="frame" x="0.0" y="420" width="354" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="xhx-Pv-g6A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="I2I-Sq-pyV" firstAttribute="top" secondItem="MQQ-Rx-5kc" secondAttribute="bottom" constant="10" id="8Qh-hu-MPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="I2I-Sq-pyV" secondAttribute="trailing" id="8es-Ze-Q3r"/>
+                                    <constraint firstAttribute="trailing" secondItem="MQQ-Rx-5kc" secondAttribute="trailing" id="9vm-P9-msn"/>
+                                    <constraint firstItem="MQQ-Rx-5kc" firstAttribute="leading" secondItem="6np-Nr-VeL" secondAttribute="leading" id="SMN-fh-SsF"/>
+                                    <constraint firstAttribute="bottom" secondItem="pXD-ir-ng2" secondAttribute="bottom" id="XHc-sL-Sa0"/>
+                                    <constraint firstItem="I2I-Sq-pyV" firstAttribute="leading" secondItem="6np-Nr-VeL" secondAttribute="leading" id="cfC-5m-Wc2"/>
+                                    <constraint firstItem="pXD-ir-ng2" firstAttribute="top" secondItem="I2I-Sq-pyV" secondAttribute="bottom" id="fh9-E4-z3G"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXD-ir-ng2" secondAttribute="trailing" id="mu7-4d-qAr"/>
+                                    <constraint firstItem="MQQ-Rx-5kc" firstAttribute="top" secondItem="6np-Nr-VeL" secondAttribute="top" constant="10" id="oJG-af-TsQ"/>
+                                    <constraint firstItem="pXD-ir-ng2" firstAttribute="leading" secondItem="6np-Nr-VeL" secondAttribute="leading" id="wxj-nw-KzI"/>
+                                    <constraint firstItem="I2I-Sq-pyV" firstAttribute="top" secondItem="MQQ-Rx-5kc" secondAttribute="bottom" constant="10" id="y1v-tf-OUP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WlX-45-mjC"/>
+                        <color key="backgroundColor" red="0.0" green="0.28627450980000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5YZ-k9-zu7" firstAttribute="top" secondItem="6np-Nr-VeL" secondAttribute="bottom" constant="30" id="346-PW-8sH"/>
+                            <constraint firstItem="8cm-G0-gPd" firstAttribute="trailing" secondItem="WlX-45-mjC" secondAttribute="trailing" id="3ie-B5-1Ex"/>
+                            <constraint firstItem="6np-Nr-VeL" firstAttribute="top" secondItem="xLx-6F-htk" secondAttribute="bottom" constant="10" id="7GX-lT-Yll"/>
+                            <constraint firstItem="WlX-45-mjC" firstAttribute="trailing" secondItem="5YZ-k9-zu7" secondAttribute="trailing" constant="30" id="DHo-iN-zAu"/>
+                            <constraint firstItem="WlX-45-mjC" firstAttribute="trailing" secondItem="6np-Nr-VeL" secondAttribute="trailing" constant="30" id="FiM-er-p3i"/>
+                            <constraint firstItem="WlX-45-mjC" firstAttribute="bottom" secondItem="5YZ-k9-zu7" secondAttribute="bottom" constant="120" id="O2U-JA-Z7B"/>
+                            <constraint firstItem="xLx-6F-htk" firstAttribute="top" secondItem="8cm-G0-gPd" secondAttribute="bottom" constant="50" id="Zma-Z5-RAp"/>
+                            <constraint firstItem="6np-Nr-VeL" firstAttribute="leading" secondItem="WlX-45-mjC" secondAttribute="leading" constant="30" id="aSd-v1-Qjt"/>
+                            <constraint firstItem="8cm-G0-gPd" firstAttribute="leading" secondItem="WlX-45-mjC" secondAttribute="leading" id="eM4-Xr-kVL"/>
+                            <constraint firstItem="8cm-G0-gPd" firstAttribute="top" secondItem="WlX-45-mjC" secondAttribute="top" id="k07-U7-G3h"/>
+                            <constraint firstItem="5YZ-k9-zu7" firstAttribute="leading" secondItem="WlX-45-mjC" secondAttribute="leading" constant="30" id="naE-QJ-m32"/>
+                            <constraint firstItem="WlX-45-mjC" firstAttribute="trailing" secondItem="xLx-6F-htk" secondAttribute="trailing" constant="30" id="pJU-Z2-1zd"/>
+                            <constraint firstItem="xLx-6F-htk" firstAttribute="leading" secondItem="WlX-45-mjC" secondAttribute="leading" constant="30" id="rZq-ba-cSi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="belowMessageFieldView" destination="pXD-ir-ng2" id="GPQ-jN-uHR"/>
+                        <outlet property="mailButton" destination="5YZ-k9-zu7" id="S43-w6-TEg"/>
+                        <outlet property="messageField" destination="I2I-Sq-pyV" id="Cao-3q-mM6"/>
+                        <outlet property="subjectField" destination="Pvj-LN-jkN" id="fhO-l0-2Yw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wid-sG-97V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="-13.392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

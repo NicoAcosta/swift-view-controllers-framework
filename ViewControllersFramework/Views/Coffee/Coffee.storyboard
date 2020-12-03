@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5vM-w9-Os0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamLight.ttf">
+            <string>GothamLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--coffee-->
+        <scene sceneID="yAO-xQ-Q6M">
+            <objects>
+                <viewController title="coffee" id="5vM-w9-Os0" customClass="Coffee" customModule="MyFramework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3T-Jp-bSl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FV-FY-FIA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RQW-0H-OJq"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="4df-aK-eIh">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="OVX-pX-PIU">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="menu:" destination="5vM-w9-Os0" id="8GV-eO-XFM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMC Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-cF-5nL">
+                                <rect key="frame" x="30" y="158" width="354" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XfE-qF-Vqd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-5j-yyp" userLabel="text view">
+                                <rect key="frame" x="30" y="408" width="354" height="244"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-K4-IPY">
+                                        <rect key="frame" x="0.0" y="47" width="354" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="4Sq-SP-ihm"/>
+                                        </constraints>
+                                        <string key="text">If you find this app useful...
+
+
+Help me to continuously
+
+improve it keeping it for free!</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FrD-K4-IPY" firstAttribute="centerY" secondItem="6fq-5j-yyp" secondAttribute="centerY" id="Nne-d9-bwM"/>
+                                    <constraint firstAttribute="trailing" secondItem="FrD-K4-IPY" secondAttribute="trailing" id="Udv-Bd-JGy"/>
+                                    <constraint firstItem="FrD-K4-IPY" firstAttribute="leading" secondItem="6fq-5j-yyp" secondAttribute="leading" id="d1y-Rx-y5A"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fol-xf-Skr">
+                                <rect key="frame" x="30" y="692" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-O5-cDh">
+                                        <rect key="frame" x="92" y="14.5" width="170" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="BMC wordmark - Black"/>
+                                        <connections>
+                                            <action selector="coffeeAction:" destination="5vM-w9-Os0" eventType="touchUpInside" id="W4X-C5-bjx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97150725130000004" green="0.8915130496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mCn-1k-tRk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PKb-2y-Ihk"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fol-xf-Skr" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="0U4-tg-HQx"/>
+                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="Qio-cF-5nL" secondAttribute="trailing" constant="30" id="Mwk-gg-EQN"/>
+                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="fol-xf-Skr" secondAttribute="trailing" constant="30" id="Pp7-Nd-TnA"/>
+                            <constraint firstItem="6fq-5j-yyp" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="VVS-wl-VY3"/>
+                            <constraint firstItem="fol-xf-Skr" firstAttribute="top" secondItem="6fq-5j-yyp" secondAttribute="bottom" constant="40" id="ZYi-Dk-C0z"/>
+                            <constraint firstItem="Qio-cF-5nL" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="dWH-7y-U45"/>
+                            <constraint firstItem="9FV-FY-FIA" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" id="fFs-Z3-1Ni"/>
+                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="6fq-5j-yyp" secondAttribute="trailing" constant="30" id="fkf-lE-0tZ"/>
+                            <constraint firstItem="6fq-5j-yyp" firstAttribute="top" secondItem="Qio-cF-5nL" secondAttribute="bottom" constant="50" id="gtN-US-6y5"/>
+                            <constraint firstItem="9FV-FY-FIA" firstAttribute="top" secondItem="PKb-2y-Ihk" secondAttribute="top" id="gy6-yC-2Or"/>
+                            <constraint firstItem="9FV-FY-FIA" firstAttribute="trailing" secondItem="PKb-2y-Ihk" secondAttribute="trailing" id="icM-9k-jsJ"/>
+                            <constraint firstItem="Qio-cF-5nL" firstAttribute="top" secondItem="9FV-FY-FIA" secondAttribute="bottom" constant="70" id="ifh-GU-EKy"/>
+                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="bottom" secondItem="fol-xf-Skr" secondAttribute="bottom" constant="120" id="zBd-cT-uUX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigLogoImageView" destination="Qio-cF-5nL" id="Wge-hz-epy"/>
+                        <outlet property="buttonView" destination="fol-xf-Skr" id="wIt-Df-VMK"/>
+                        <outlet property="nameLogoImageView" destination="pmc-O5-cDh" id="wBJ-03-KAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVk-AZ-831" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="-11.383928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BMC Logo - White" width="884" height="1279"/>
+        <image name="BMC wordmark - Black" width="3252" height="600"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+    </resources>
+</document>

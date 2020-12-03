@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5dV-Sr-uip">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--pp-->
+        <scene sceneID="74s-3W-dgL">
+            <objects>
+                <viewController title="pp" id="5dV-Sr-uip" customClass="Privacy" customModule="MyFramework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJc-1T-MBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hc-yp-QJA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="a2q-s2-1Rg"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Privacy Policy" id="eQa-l4-ckY">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="ke7-ue-JK3">
+                                            <color key="tintColor" red="0.086274509799999996" green="0.59999999999999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="menu:" destination="5dV-Sr-uip" id="Prf-C3-95E"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XF7-dg-zrB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xh6-5e-Eu8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Hc-yp-QJA" firstAttribute="top" secondItem="xh6-5e-Eu8" secondAttribute="top" id="4K3-Iq-1fY"/>
+                            <constraint firstItem="xh6-5e-Eu8" firstAttribute="bottom" secondItem="XF7-dg-zrB" secondAttribute="bottom" id="DHt-Vw-DOz"/>
+                            <constraint firstItem="XF7-dg-zrB" firstAttribute="leading" secondItem="xh6-5e-Eu8" secondAttribute="leading" id="Mfl-5P-f1x"/>
+                            <constraint firstItem="1Hc-yp-QJA" firstAttribute="trailing" secondItem="xh6-5e-Eu8" secondAttribute="trailing" id="NkI-TH-DF1"/>
+                            <constraint firstItem="XF7-dg-zrB" firstAttribute="top" secondItem="1Hc-yp-QJA" secondAttribute="bottom" id="pV3-et-YA7"/>
+                            <constraint firstItem="1Hc-yp-QJA" firstAttribute="leading" secondItem="xh6-5e-Eu8" secondAttribute="leading" id="vkj-Te-ymc"/>
+                            <constraint firstItem="xh6-5e-Eu8" firstAttribute="trailing" secondItem="XF7-dg-zrB" secondAttribute="trailing" id="yOz-L8-mmo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="XF7-dg-zrB" id="ERe-la-Vyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXm-FW-ey2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

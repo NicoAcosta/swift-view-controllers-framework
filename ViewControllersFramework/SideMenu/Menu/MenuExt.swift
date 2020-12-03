@@ -34,7 +34,7 @@ extension Menu: UITableViewDelegate, UITableViewDataSource {
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SampleTableCell.self), for: indexPath) as? SampleTableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MySampleTableCell.self), for: indexPath) as? MySampleTableCell else {
             preconditionFailure("Unregistered table view cell")
         }
         

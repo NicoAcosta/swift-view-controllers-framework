@@ -17,7 +17,7 @@ open class Terms : MyViewController, SideMenuItemContent, Storyboardable {
     }
     
     open func menu() {
-        //showSideMenu()
+        showSideMenu()
     }
     
     

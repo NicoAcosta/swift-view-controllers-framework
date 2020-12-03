@@ -13,7 +13,6 @@ class Menu: MenuViewController, Storyboardable {
     var myAppName : String? {
         return "AppName"
     }
-   
     
     
     

@@ -17,7 +17,7 @@ open class Privacy : MyViewController, SideMenuItemContent, Storyboardable {
     }
     
     open func menu() {
-        //showSideMenu()
+        showSideMenu()
     }
     
     

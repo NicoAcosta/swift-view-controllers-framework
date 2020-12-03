@@ -16,7 +16,9 @@ class Host: MenuContainerViewController {
     }
     
     var myMenuItemsViewControllers : [UIViewController]? {
-        return nil
+        return [
+            
+        ]
     }
     
 }

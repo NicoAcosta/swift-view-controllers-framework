@@ -16,7 +16,7 @@
         <!--Menu-->
         <scene sceneID="g9A-E6-28y">
             <objects>
-                <viewController storyboardIdentifier="NavigationMenu" id="tbU-AA-hSh" customClass="Menu" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NavigationMenu" id="tbU-AA-hSh" customClass="Menu" customModule="Color_it_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="clm-nE-8bd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                                         <rect key="frame" x="0.0" y="200" width="414" height="418"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleTableCell" id="iMp-SB-KSC" customClass="SampleTableCell" customModule="test4" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySampleTableCell" id="iMp-SB-KSC" customClass="MySampleTableCell" customModule="Color_it_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iMp-SB-KSC" id="o8J-MM-QNb">

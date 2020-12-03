@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Fito
 
 class Coffee : MyViewController, SideMenuItemContent, Storyboardable {
     
@@ -19,7 +20,7 @@ class Coffee : MyViewController, SideMenuItemContent, Storyboardable {
     }
     
     func menu() {
-        //showSideMenu()
+        showSideMenu()
     }
     
     override var myUserInterfaceStyle: UIUserInterfaceStyle? {

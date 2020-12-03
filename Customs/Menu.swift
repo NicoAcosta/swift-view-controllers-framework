@@ -11,11 +11,9 @@ import UIKit
 class Menu: MenuViewController, Storyboardable {
     
     var myAppName : String? {
-        return nil
+        return "AppName"
     }
-    
-    
-    
+   
     
     
     

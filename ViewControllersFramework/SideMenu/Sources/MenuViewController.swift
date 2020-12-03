@@ -17,7 +17,7 @@
 //
 
 import UIKit
-import MyFramework
+import Fito
 
 open class MenuViewController: MyViewController {
 

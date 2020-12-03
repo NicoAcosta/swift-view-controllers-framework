@@ -12,7 +12,7 @@ class Host: MenuContainerViewController {
     
     
     var myMenuViewController : MenuViewController? {
-        return nil
+        return Menu.storyboardViewController()
     }
     
     var myMenuItemsViewControllers : [UIViewController]? {

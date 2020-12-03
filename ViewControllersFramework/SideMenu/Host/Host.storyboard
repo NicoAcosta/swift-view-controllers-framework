@@ -10,7 +10,7 @@
         <!--Host-->
         <scene sceneID="fOy-9x-Akv">
             <objects>
-                <viewController id="Utf-5h-dE7" customClass="Host" customModule="MyFramwork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Utf-5h-dE7" customClass="Host" customModule="Color_it_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLk-km-Tcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

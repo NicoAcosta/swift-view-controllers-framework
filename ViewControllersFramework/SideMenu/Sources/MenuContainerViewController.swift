@@ -17,7 +17,7 @@
 //
 
 import UIKit
-import MyFramework
+import Fito
 
 /**
  Container for menu view controller.

@@ -7,20 +7,23 @@
 
 import Foundation
 import UIKit
-import MessageUI
+import Fito
 
 
 class Support : MyViewController, SideMenuItemContent, Storyboardable {
     
     var mailRecipients : [String]? {
-        return nil
+        return ["app@app.com"]
+        
     }
     
     func menu() {
-        //showSideMenu()
+        showSideMenu()
     }
     
-    
+    override var myBackgroundGradientLayerColors: [UIColor]? {
+        return [.purple, .red]
+    }
     
     
     

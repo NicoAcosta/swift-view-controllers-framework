@@ -17,6 +17,7 @@
 //
 
 import UIKit
+import Fito
 
 /**
  The protocol to indicate item of side menu. Every menu item should adopt this protocol.
@@ -33,6 +34,18 @@ public protocol SideMenuItemContent {
  The extension of SideMenuItemContent protocol implementing `showSideMenu()` method for UIViewController class.
  */
 extension SideMenuItemContent where Self: UIViewController {
+
+    public func showSideMenu() {
+        if let menuContainerViewController = parent as? MenuContainerViewController {
+            menuContainerViewController.showSideMenu()
+        } else if let navController = parent as? UINavigationController,
+            let menuContainerViewController = navController.parent as? MenuContainerViewController {
+            menuContainerViewController.showSideMenu()
+        }
+    }
+}
+
+extension SideMenuItemContent where Self: MyViewController {
 
     public func showSideMenu() {
         if let menuContainerViewController = parent as? MenuContainerViewController {

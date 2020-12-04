@@ -42,6 +42,7 @@ extension Support {
         //  Propiedades de mailButton
         
         mailButton.layer.cornerRadius = 5
+        mailButton.titleColor(sendColor)
         
         
         // correr keyboardWillShow cada vez que se va a abrir el teclado

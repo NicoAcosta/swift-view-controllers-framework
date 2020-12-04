@@ -17,14 +17,13 @@ class Support : MyViewController, SideMenuItemContent, Storyboardable {
         
     }
     
+    var sendColor : UIColor {
+        return .black
+    }
+    
     func menu() {
         showSideMenu()
     }
-    
-    override var myBackgroundGradientLayerColors: [UIColor]? {
-        return [.purple, .red]
-    }
-    
     
     
     

@@ -15,7 +15,7 @@
         <!--coffee-->
         <scene sceneID="yAO-xQ-Q6M">
             <objects>
-                <viewController title="coffee" id="5vM-w9-Os0" customClass="Coffee" customModule="MyFramework2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="coffee" id="5vM-w9-Os0" customClass="Coffee" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3T-Jp-bSl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,10 +36,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMC Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-cF-5nL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-cF-5nL">
                                 <rect key="frame" x="30" y="158" width="354" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="XfE-qF-Vqd"/>
+                                    <constraint firstAttribute="height" constant="200" id="BbW-mV-QEk"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-5j-yyp" userLabel="text view">
@@ -73,7 +73,6 @@ improve it keeping it for free!</string>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-O5-cDh">
                                         <rect key="frame" x="92" y="14.5" width="170" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="BMC wordmark - Black"/>
                                         <connections>
                                             <action selector="coffeeAction:" destination="5vM-w9-Os0" eventType="touchUpInside" id="W4X-C5-bjx"/>
                                         </connections>
@@ -89,17 +88,17 @@ improve it keeping it for free!</string>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fol-xf-Skr" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="0U4-tg-HQx"/>
-                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="Qio-cF-5nL" secondAttribute="trailing" constant="30" id="Mwk-gg-EQN"/>
+                            <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="Qio-cF-5nL" secondAttribute="trailing" constant="30" id="IFY-Ma-Xdu"/>
+                            <constraint firstItem="Qio-cF-5nL" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="Ln7-Xa-TUL"/>
+                            <constraint firstItem="6fq-5j-yyp" firstAttribute="top" secondItem="Qio-cF-5nL" secondAttribute="bottom" constant="50" id="MQk-XJ-Mxk"/>
                             <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="fol-xf-Skr" secondAttribute="trailing" constant="30" id="Pp7-Nd-TnA"/>
                             <constraint firstItem="6fq-5j-yyp" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="VVS-wl-VY3"/>
                             <constraint firstItem="fol-xf-Skr" firstAttribute="top" secondItem="6fq-5j-yyp" secondAttribute="bottom" constant="40" id="ZYi-Dk-C0z"/>
-                            <constraint firstItem="Qio-cF-5nL" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" constant="30" id="dWH-7y-U45"/>
                             <constraint firstItem="9FV-FY-FIA" firstAttribute="leading" secondItem="PKb-2y-Ihk" secondAttribute="leading" id="fFs-Z3-1Ni"/>
                             <constraint firstItem="PKb-2y-Ihk" firstAttribute="trailing" secondItem="6fq-5j-yyp" secondAttribute="trailing" constant="30" id="fkf-lE-0tZ"/>
-                            <constraint firstItem="6fq-5j-yyp" firstAttribute="top" secondItem="Qio-cF-5nL" secondAttribute="bottom" constant="50" id="gtN-US-6y5"/>
                             <constraint firstItem="9FV-FY-FIA" firstAttribute="top" secondItem="PKb-2y-Ihk" secondAttribute="top" id="gy6-yC-2Or"/>
                             <constraint firstItem="9FV-FY-FIA" firstAttribute="trailing" secondItem="PKb-2y-Ihk" secondAttribute="trailing" id="icM-9k-jsJ"/>
-                            <constraint firstItem="Qio-cF-5nL" firstAttribute="top" secondItem="9FV-FY-FIA" secondAttribute="bottom" constant="70" id="ifh-GU-EKy"/>
+                            <constraint firstItem="Qio-cF-5nL" firstAttribute="top" secondItem="9FV-FY-FIA" secondAttribute="bottom" constant="70" id="njB-oa-Mi9"/>
                             <constraint firstItem="PKb-2y-Ihk" firstAttribute="bottom" secondItem="fol-xf-Skr" secondAttribute="bottom" constant="120" id="zBd-cT-uUX"/>
                         </constraints>
                     </view>
@@ -115,8 +114,6 @@ improve it keeping it for free!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="BMC Logo - White" width="884" height="1279"/>
-        <image name="BMC wordmark - Black" width="3252" height="600"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
     </resources>
 </document>

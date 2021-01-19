@@ -15,10 +15,7 @@ extension Coffee {
         super.viewDidLoad()
         
         bigLogoImageView.image = UIImage(named: logoAssetName!)
-        nameLogoImageView.imageView?.image = UIImage(named: nameAssetName!)
-        
-        buttonView.layer.cornerRadius = 5
-        
+        nameLogoImageView.setImage(UIImage(named: nameAssetName!), for: .normal)
     }
     
     @IBAction func menu(_ sender: Any) {
